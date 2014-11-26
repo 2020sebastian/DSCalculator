@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.depaul.csc472.calculator" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BreakDownFD"
+            android:label="@string/title_activity_break_down_fd" >
+        </activity>
+        <activity
+            android:name=".threeNF"
+            android:label="@string/title_activity_three_nf" >
+        </activity>
+        <activity
+            android:name=".simplifyLeft"
+            android:label="@string/title_activity_simplify_left" >
+        </activity>
+        <activity
+            android:name=".simplifyRight"
+            android:label="@string/title_activity_simplify_right" >
+        </activity>
+        <activity
+            android:name=".minimalCover"
+            android:label="@string/title_activity_minimal_cover" >
+        </activity>
+        <activity
+            android:name=".canonicalCover"
+            android:label="@string/title_activity_canonical_cover" >
+        </activity>
+        <activity
+            android:name=".advanced"
+            android:label="@string/title_activity_advanced" >
+        </activity>
+        <activity
+            android:name=".help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".CalculateCover"
+            android:label="@string/title_activity_calculate_cover" >
+        </activity>
+        <activity
+            android:name=".GetAllSuperKeys"
+            android:label="Get Super Keys" >
+        </activity>
+        <activity
+            android:name=".GetAllKeys"
+            android:label="Get All Keys" >
+        </activity>
+    </application>
+
+</manifest>

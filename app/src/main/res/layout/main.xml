@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MyActivity"
+    android:background="@color/bg01">
+    <TextView
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"/>
+    <LinearLayout
+        android:id="@+id/top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/green50">
+
+
+        <EditText
+            android:id="@+id/fd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="Functional Dependecies"
+            android:layout_weight="1"
+            android:inputType= "text" />
+
+
+        <EditText
+            android:id="@+id/relations"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="Relations"
+            android:layout_weight="1"
+            android:inputType= "text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Cover"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+
+
+
+        <TableRow>
+            <Button
+                android:id="@+id/breakDown"
+                android:text="Break Down FD"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/threeNF"
+                android:text="Calculate 3NF"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/simplifyLeft"
+                android:text="Simplify Left"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/simplifyRight"
+                android:text="Simplify Right"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/minimalCover"
+                android:text="Minimal Cover"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/canonicalCover"
+                android:text="Canonical Cover"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/allKeys"
+                android:text="Get All Keys"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/allSuperKeys"
+                android:text="Get SuperKeys"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+        </TableLayout>
+
+    <Button
+        android:id="@+id/advanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced Calculations"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+</LinearLayout>
+
